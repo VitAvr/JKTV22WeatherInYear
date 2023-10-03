@@ -5,6 +5,7 @@
  */
 package jktv22weatherinyear;
 
+import tasks.InitProject;
 import java.util.Scanner;
 
 /**
@@ -18,8 +19,10 @@ class App {
         scanner = new Scanner(System.in);
     }
     public void run(){
-        System.out.println("---Weather in year ---");
+        System.out.println("--- Weather in year ---");
         boolean repeat = true;
+        InitProject initProject = new InitProject();
+        initProject.init();
         do {
             System.out.println("Задачи");
             System.out.println("0. Выход из программы");
